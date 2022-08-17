@@ -59,20 +59,17 @@ li {
   height: 30px;
   margin-bottom: 50px;
 }
-
 #topbar div > span {
   position: absolute;
   left: 50;
   user-select: none;
 }
-
 #topbar #title {
   transition: all 0.5s ease-in-out;
   user-select: none;
   color: #eeeeee;
   font-size: 20px;
 }
-
 #topbar #title:hover {
   transition: all 0.5s ease-in-out;
   cursor: pointer;

@@ -1,13 +1,9 @@
 $fonte: "SF Pro Display", sans-serif
-$fundo:linear-gradient(to bottom, #111111, #151515, #222222)
+$fundo:linear-gradient(to bottom, #111111, #151515, #222222 100%)
 $barra: #333333
 
-@font-face
-  font-family: SF Pro Display
-  src: url("SF-Pro-Display.ttf") format("truetype")
-  font-weight: normal
-  font-style: normal
-  
+@import url(https://fonts-six.vercel.app/API/SF-Pro.css)
+
 *
   margin: 0
   padding: 0
@@ -26,14 +22,13 @@ html
 body
   background-image: $fundo
   background-repeat: no-repeat
-  background-size: cover
+  background-attachment: fixed
   color: #eeeeee
   font-family: $fonte
   font-size: 16px
   line-height: 1.5
   margin: 0
   padding: 0
-  height: 100%
 
 mark 
   background-color: rgba(0, 0, 0, 0 )
@@ -83,5 +78,6 @@ li
   text-align: center
   margin-bottom: 30px
 #textbody
-  margin-left: 120px
-  margin-right: 120px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
